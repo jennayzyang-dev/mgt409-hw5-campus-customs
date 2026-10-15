@@ -225,3 +225,20 @@ This is a log of the prompts I typed to my vibe coder, organized by problem.
 > yes put in reflection tab and let me know if problem 10 is finished
 
 **What was lacking after the first prompt:** The first draft didn't sound like me, so I asked for it in simpler, more casual wording, then checked it against my ticket tabs and Cash tab before putting it in the Reflection tab.
+
+---
+
+## Problem 11: Submit to GitHub
+
+**Prompt:**
+> push your code to a public github repository so graders can clone it
+> submit the repo url to canvas, and also put it in output/github_url.txt
+>
+> do not push your real .env to the github repo. do include both database files under data/ (the original and your working copy) so graders can run your app easily
+>
+> readme should explain: copy original DB to the working copy when you need a clean run, start MCP server, start fastapi backend, start the react board, reset the DB before a full three-ticket run.
+
+**Follow-up prompt (my choice):**
+> Yes, name it mgt409-hw5-campus-customs
+
+**What was lacking after the first prompt:** It didn't name the repo or confirm that making it public was OK, so I picked the name and approved a public repo after the AI checked that my real API key wasn't in any file.
