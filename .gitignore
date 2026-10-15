@@ -1,0 +1,12 @@
+.venv/
+frontend/node_modules/
+frontend/dist/
+__pycache__/
+.env
+output/audit_trail.lock
+output/audit_trail.tmp
+.DS_Store
+data.zip
+output/screens/
+frontend/.env
+frontend/tsconfig.tsbuildinfo

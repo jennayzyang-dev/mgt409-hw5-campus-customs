@@ -1,0 +1,81 @@
+{
+  "run_date": "2026-10-15",
+  "business_date": "2026-08-31",
+  "starting_balance": 3400.0,
+  "ending_balance": 2560.0,
+  "tickets": [
+    {
+      "id": 101,
+      "final_status": "resolved",
+      "run_id": "31330f124dba",
+      "outcome": "CC-TEE-WHITE size S is out of stock (0). The rush reprint is already on order under invoice 501 ($840, 3 days overdue). Accounting prepared the payment, a human approved it, and invoice 501 is now paid. Tauhid got an honest reply with no firm date.",
+      "agents": {
+        "boss": "Called inventory first, then customer_service and accounting. Marked the ticket waiting with a note, and reported the $840 approval needed.",
+        "inventory": "Confirmed 0 on hand in Aisle B. Found that the reprint is already on invoice 501 (Bulldog Print Co, 5-day lead time) and did not prepare a duplicate purchase. Sent the overdue invoice to accounting itself.",
+        "accounting": "Checked invoice 501, the $3,400 balance and the payments ledger. Prepared payment action 1 for exactly $840 and said it would leave $2,560.",
+        "customer_service": "Checked the stock, drafted the reply to Tauhid (out of stock, reprint on order, no reliable date yet), and updated the ticket.",
+        "facilities": "Not called."
+      },
+      "human_approvals": [
+        {
+          "action_id": 1,
+          "kind": "invoice",
+          "amount": 840.0,
+          "prepared_by": "accounting",
+          "status": "approved",
+          "approved_by": "Jenna Yang (maker); Test Checker (checker)"
+        }
+      ],
+      "cash_change": -840.0
+    },
+    {
+      "id": 102,
+      "final_status": "resolved",
+      "run_id": "eeb1cb76f5ce",
+      "outcome": "The rent notice matches lease 1: $2,400 due 2026-09-02 (2 days away, urgent). Accounting prepared the rent payment. It was not approved in this run, so cash did not change.",
+      "agents": {
+        "boss": "Called facilities first, then accounting. Escalated the ticket for owner approval.",
+        "facilities": "Checked the email against lease 1 (Elm City Properties, $2,400, due 2026-09-02), found no rent paid yet, flagged it urgent, and passed it to accounting.",
+        "accounting": "Prepared payment action 2 for $2,400. When asked a second time it did not make a duplicate, and it projected $1,000 left after rent.",
+        "inventory": "Not called.",
+        "customer_service": "Not called."
+      },
+      "human_approvals": [
+        {
+          "action_id": 2,
+          "kind": "rent",
+          "amount": 2400.0,
+          "prepared_by": "accounting",
+          "status": "pending",
+          "approved_by": null
+        }
+      ],
+      "cash_change": 0.0
+    },
+    {
+      "id": 103,
+      "final_status": "resolved",
+      "run_id": "f214aa26af01",
+      "outcome": "8 of the 20 size M navy hoodies are in stock. A restock of 12 ($264) was prepared but not approved. 10% off ($52.20 each) is within policy, but the draft reply already quotes that price. Under the shop's rules, a person should review that before it goes out.",
+      "agents": {
+        "boss": "Called accounting first, then inventory, then customer_service, then accounting again (7 delegations in total). Marked the ticket waiting.",
+        "accounting": "Pricing: $22 cost, $58 list, $36 margin. 10% off is $52.20, above the 2\u00d7 cost floor of $44, which is $1,044 for 20 instead of $1,160. Checked the balance and projected it after the purchase.",
+        "inventory": "Found 8 in size M (12 short) and the other sizes. Prepared purchase action 3: 12 \u00d7 size M from Bulldog Print Co for $264, with a 5-day lead time (estimated 2026-09-05).",
+        "customer_service": "Checked stock and price, checked back with inventory and accounting, drafted the reply to the Yale AI Club, and updated the ticket.",
+        "facilities": "Not called."
+      },
+      "human_approvals": [
+        {
+          "action_id": 3,
+          "kind": "purchase",
+          "amount": 264.0,
+          "prepared_by": "inventory",
+          "status": "pending",
+          "approved_by": null
+        }
+      ],
+      "cash_change": 0.0,
+      "issue": "Customer service offered the $52.20 discount price in its draft reply. The shop rules say customer service quotes list price only, and a person signs off on any discount."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "prompt": "Use the check_inventory tool to look up CC-TEE-WHITE size S",
+    "tool": "check_inventory",
+    "arguments": {"sku": "CC-TEE-WHITE", "size": "S"},
+    "output": {"found": true, "sku": "CC-TEE-WHITE", "name": "Classic Bulldog Tee", "size": "S", "qty": 0, "location": "Aisle B"},
+    "db_check": "inventory row CC-TEE-WHITE|Classic Bulldog Tee|S|0|Aisle B -- matches"
+  },
+  {
+    "prompt": "Use the get_lease tool for lease 1",
+    "tool": "get_lease",
+    "arguments": {"lease_id": 1},
+    "output": {"found": true, "id": 1, "space_name": "Chapel Street shop", "landlord": "Elm City Properties", "monthly_rent": 2400, "next_due": "2026-09-02", "notes": null},
+    "db_check": "leases row 1|Chapel Street shop|Elm City Properties|2400.0|2026-09-02| -- matches"
+  },
+  {
+    "prompt": "Use the get_pricing tool for CC-HOOD-NAVY",
+    "tool": "get_pricing",
+    "arguments": {"sku": "CC-HOOD-NAVY"},
+    "output": {"found": true, "sku": "CC-HOOD-NAVY", "unit_cost": 22, "list_price": 58, "margin_per_unit": 36},
+    "db_check": "pricing row CC-HOOD-NAVY|22.0|58.0 -- matches (margin 58 - 22 = 36)"
+  }
+]
